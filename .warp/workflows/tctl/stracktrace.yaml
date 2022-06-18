@@ -1,0 +1,13 @@
+---
+name: Get a stracktrace of a current Temporal workflow execution
+command: "tctl wf query -w {{workflow_id}} -qt __stack_trace"
+tags:
+  - temporal
+  - tctl
+description: "Get a stracktrace of a current Temporal workflow execution"
+arguments:
+  - name: workflow_id
+    description: The Temporal workflow ID.
+author: hferentschik
+shells: []
+
