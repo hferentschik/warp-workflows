@@ -1,0 +1,14 @@
+---
+name: Get n lines of journalctl logs from device
+command: "journalctl -f -n {{lines}}}} -a -u balena "
+tags:
+  - balena
+  - journalctl
+description: "Get n lines of journalctl logs from device"
+arguments:
+  - name: lines
+    description: Number of lines to retrieve
+    default: 1000
+author: hferentschik
+shells: []
+
